@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Stitch and seam tailoring </title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <header>
+        <h1>Stitch and Seam</h1>
+    </header>
+    <nav>
+        <a href="Home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="services.html">services</a>
+        <a href="booking.html">booking</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <!--Page introduction-->
+    <section class="hero">
+        <p>Complete the form below and we will contact you to confirm your appointment.</p>
+    </section>
+    
+    <!--Booking Form-->
+    <section class="booking-container">
+
+        <form>
+
+            <!--Customer information-->
+            <div class="form-group">
+                <label for="Fullname">Full Name</label>
+                <input type="text" id="Fullname" name="fullname"
+                       placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form- group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">phone number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number" required>
+            </div>
+
+            <!--Service selection-->
+            <div class="form-group">
+                <label for="service">select a service</label>
+
+                <select id="service" name="service" required>
+                    <option value="">--select a service--</option>
+                    <option value="alterations">clothing alterations - From R2800</option>
+                    <option value="suits">custom suits - From R6000</option>
+                    <option value="Formalwear">Formal wear - From R1200</option>
+                    <option value="repairs">Clothing repairs - From R100</option>
+                    <option value="Measurements">Measurements and fitting - From R150</option>
+                </select>
+            </div>
+
+            <!--Date-->
+            <div class="form-group">
+                <label for="date">prefered Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <!--Time-->
+            <div class="form-group">
+                <label for="time">prefered time</label>
+
+                <select id="time" name="time" required>
+                    <option value="">-- select a time --</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                </select>
+            </div>
+
+            <!--Additional Information-->
+            <div class="form group">
+                <label for="message">Additional Information</label>
+
+                <textarea id="message" name="message"
+                     placeholder="Tell us what you need help with..."></textarea>
+            </div>
+
+            <!--Submit Button-->
+            <button type="submit" class="button">
+                Book appointment
+            </button>
+        </form>
+        <p class="note">
+            Please note: Submitting this form does not guarantee an appointment.
+            We will contact you to confirm your booking.
+        </p>
+    </section>
+
+    <!--Contact information-->
+    <section class="contact-info">
+        <h2>NEED HELP?</h2>
+
+        <p>Phone:0723456789</p>
+        <p>Email:stitchandSeam tailoring.co.za</p>
+        <img src="C:\Users\Student\Documents\web development\images\icon-phone-smartphone-email-location-260nw-1712054872.webp">s
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Stitch and Seam tailoring.All rights reserved</p>
+    </footer>
+</body>
