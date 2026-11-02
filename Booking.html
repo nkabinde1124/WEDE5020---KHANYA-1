@@ -16,8 +16,20 @@
         <a href="services.html">services</a>
         <a href="booking.html">booking</a>
         <a href="contact.html">contact</a>
+        <a href="enquiry.html">enquiry</a>
     </nav>
 
+    <!-- Search bar -->
+<form class="search-form" action="search.html" method="get">
+    <input
+        type="search"
+        name="q"
+        placeholder="Search this website..."
+        aria-label="Search this website"
+        required
+    >
+    <button type="submit">Search</button>
+</form>
     <!--Page introduction-->
     <section class="hero">
         <p>Complete the form below and we will contact you to confirm your appointment.</p>
@@ -32,19 +44,25 @@
             <div class="form-group">
                 <label for="Fullname">Full Name</label>
                 <input type="text" id="Fullname" name="fullname"
-                       placeholder="Enter your full name" required>
+                       placeholder="Enter your full name" 
+                       required
+                >       
             </div>
 
-            <div class="form- group">
+            <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" id="email" name="email"
-                       placeholder="Enter your email address" required>
+                       placeholder="Enter your email address" 
+                       required
+                >
             </div>
 
             <div class="form-group">
                 <label for="phone">phone number</label>
                 <input type="tel" id="phone" name="phone"
-                       placeholder="Enter your phone number" required>
+                       placeholder="Enter your phone number" 
+                       required
+                >
             </div>
 
             <!--Service selection-->
@@ -64,7 +82,9 @@
             <!--Date-->
             <div class="form-group">
                 <label for="date">prefered Date</label>
-                <input type="date" id="date" name="date" required>
+                <input type="date" id="date" name="date" 
+                required
+                >
             </div>
             <!--Time-->
             <div class="form-group">
@@ -84,7 +104,7 @@
             </div>
 
             <!--Additional Information-->
-            <div class="form group">
+            <div class="form-group">
                 <label for="message">Additional Information</label>
 
                 <textarea id="message" name="message"
@@ -107,11 +127,14 @@
         <h2>NEED HELP?</h2>
 
         <p>Phone:0723456789</p>
-        <p>Email:stitchandSeam tailoring.co.za</p>
-        <img src="C:\Users\Student\Documents\web development\images\icon-phone-smartphone-email-location-260nw-1712054872.webp">s
+        <p>Email:stitchandSeamtailoring52@gmail.com</p>
+        <img src="images\icon-phone-smartphone-email-location-260nw-1712054872.webp">
     </section>
 
     <footer>
         <p>&copy; 2026 Stitch and Seam tailoring.All rights reserved</p>
     </footer>
+
+    <script src="javascript/script.js" defer></script>
 </body>
+</html>

@@ -14,8 +14,23 @@
     <a href="services.html">services</a>
     <a href="Booking.html">book</a>
     <a href="contact.html">contact</a>
+    <a href="enquiry.html">enquiry</a>
     </nav>
     </header>
+
+    
+<!-- Search bar -->
+<form class="search-form" action="search.html" method="get">
+    <input
+        type="search"
+        name="q"
+        placeholder="Search this website..."
+        aria-label="Search this website"
+        required
+    >
+    <button type="submit">Search</button>
+</form>
+
 
     <section id="hero">
         <h2>Cut with care.Fitted for life</h2>
@@ -35,7 +50,11 @@
             <li>Alterations and repairs</li>
             <li>Wedding attire</li>
         </ul>
-        <img src="C:\Users\Student\Documents\web development\images\H05b0ad73a71b482c806bf1baf557717f3.png_300x300.avif">
+        <img src="images/H05b0ad73a71b482c806bf1baf557717f3.png_300x300.avif"
+     class="gallery-img"
+     data-full="images/your-bigger-version.jpg"
+     alt="Tailored suit">
+
     </section>
 
     <section id="booking">
@@ -46,13 +65,17 @@
             <button type="sumit">send</button>
         </form>
     </section>
-    <footer>
+<footer>
         <p>&copy; 2026 Stitch and seam tailoring</p>
     </footer>
 
     </body>
     
 
-    
+<div id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+   <script src="javascript/script.js" defer></script> 
 </body>
 </html>

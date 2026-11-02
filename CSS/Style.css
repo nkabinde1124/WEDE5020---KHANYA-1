@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
     font-size: x-large;
     color: black;
     margin: 20px;
@@ -48,6 +48,7 @@ a{
     background-color: black;
     padding: 12px 20px;
     border-radius: 8px;
+    text-align: center;
 }
 
 a:hover {
@@ -105,7 +106,7 @@ p {
     font-size: large;
     color: black;
     margin: 20px;
-    text-align: left;
+    text-align: center;
     font-weight:bolder;
 }
 
@@ -309,3 +310,155 @@ img {
     border-color: black;
 }
 
+/* Error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Highlight incorrect inputs */
+.invalid {
+    border: 2px solid red !important;
+}
+
+/* Success message */
+.success-message {
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Search form styling */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+/* Search input */
+.search-form input[type="search"] {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Search button */
+.search-form button {
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Search button hover effect */
+.search-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive search bar */
+@media (max-width: 480px) {
+    .search-form input[type="search"] {
+        width: 65%;
+    }
+}
+
+
+/* Full screen image background */
+.image-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Enlarged image */
+.image-lightbox img {
+    max-width: 95%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Close button */
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Make images clickable */
+body img {
+    cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .image-lightbox img {
+        max-width: 100%;
+        max-height: 85vh;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 20px;
+        font-size: 35px;
+    }
+}
+
+/* Search results */
+.search-result {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-result h2 {
+    margin-bottom: 8px;
+}
+
+.search-result h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.search-result h2 a:hover {
+    color: #8b4513;
+    text-decoration: underline;
+}
+
+.search-result p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#searchHeading {
+    text-align: center;
+    margin: 15px;
+}

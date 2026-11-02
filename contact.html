@@ -22,7 +22,20 @@
         <a href="services.html">services</a>
         <a href="booking.html">booking</a>
         <a href="contact.html">contact</a>
+        <a href="enquiry.html">enquiry</a>
     </nav>
+
+    <!-- Search bar -->
+<form class="search-form" action="search.html" method="get">
+    <input
+        type="search"
+        name="q"
+        placeholder="Search this website..."
+        aria-label="Search this website"
+        required
+    >
+    <button type="submit">Search</button>
+</form>
 
     <!--page introduction-->
     <section class="hero">
@@ -58,55 +71,54 @@
     </div>
 </div>
 
-<!--Contact Form-->
+
+<!-- Contact Form -->
 <div class="contact-box">
 
-    <h2>Send Us a message</h2>
+    <h2>Send Us a Message</h2>
 
-    <form>
+    <form id="contactForm" novalidate>
 
         <div class="form-group">
             <label for="name">Full name</label>
-
-            <input type="text"
-                   id="name"
-                   name="name"
-                   Placeholder="enter your full name"
-                   required>
+            <input type="text" id="name" name="name"
+                placeholder="Enter your full name" required>
+            <span class="error-message" id="nameError"></span>
         </div>
 
         <div class="form-group">
             <label for="email">Email address</label>
-
-            <input type="email"
-                   id="email"
-                   name="email"
-                   placeholder="Enter your email address"
-                   required>
+            <input type="email" id="email" name="email"
+                placeholder="Enter your email address" required>
+            <span class="error-message" id="emailError"></span>
         </div>
 
         <div class="form-group">
-            <label for="phone">phone number</label>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone"
+                placeholder="Enter your phone number" required>
+            <span class="error-message" id="phoneError"></span>
+        </div>
 
-            <input type="tel"
-                   id="phone"
-                   name="phone"
-                   placeholder="Enter your phone number">
-     </div>
+        <div class="form-group">
+            <label for="message">Description</label>
+            <textarea id="message" name="message"
+                placeholder="How can we help you?" required></textarea>
+            <span class="error-message" id="messageError"></span>
+        </div>
 
-     <div class="form-group">
-        <label for="message">message</label>
+        <button type="submit" class="button">
+            Send message
+        </button>
 
-        <textarea id="message"
-                  name="message"
-                  placeholder="How can we help you?"
-                  required></textarea>
-     </div>
+        <p id="successMessage" class="success-message"
+            aria-live="polite"></p>
 
-     <button type="submit" class="button">
-        Send message
-     </button>
     </form>
+
+</div>
+
+</form>
 </div>
 </section>
 
@@ -133,5 +145,7 @@
 <footer>
     <p>&copy; 2026 Stitch and Seam tailoring. All rights reserved</p>
 </footer>
+
+<script src="javascript/script.js" defer></script>
 </body>
 </html>
